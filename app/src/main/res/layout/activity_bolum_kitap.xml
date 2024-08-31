@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context=".bolumKitap">
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="2dp"
+    android:padding="13dp"
+
+    android:id="@+id/baccc"
+    android:src="@drawable/ic_baseline_arrow_back_24"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:strokeWidth="3dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="@string/gozle"/>
+
+    </com.google.android.material.card.MaterialCardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/materialCardView"
+    android:id="@+id/scrollView">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/materialCardView"
+        android:keepScreenOn="true"
+        android:scrollbarSize="7dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/each_item" />
+</ScrollView>
+</RelativeLayout>

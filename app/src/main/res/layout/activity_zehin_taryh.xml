@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context=".zehin_taryh">
+    <include
+        layout="@layout/mytoolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myToolbar"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/gosmak"
+        android:text="10 /"
+        android:textColor="#636161"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/gosmak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myToolbar"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="5dp"
+        android:text="10"
+        android:textColor="#636161"
+        android:textSize="16dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sorag"
+        android:layout_below="@+id/myToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/mitrregular"
+        android:gravity="center"
+        android:text="Seyle seyle sorag"
+        android:textColor="@color/textColor"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lineee"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sorag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <android.widget.Button
+            android:id="@+id/jogap_A"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selected_option_border_bg"
+            android:enabled="true"
+            android:fontFamily="@font/david_libre"
+            android:onClick="jogap_Aclicked"
+            android:text="A) jogap"
+
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="14dp" />
+
+        <android.widget.Button
+            android:id="@+id/jogap_B"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selected_option_border_bg"
+            android:enabled="true"
+            android:fontFamily="@font/david_libre"
+            android:onClick="jogap_Bclicked"
+            android:text="B) Jogap"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="14dp" />
+
+        <android.widget.Button
+            android:id="@+id/jogap_C"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selected_option_border_bg"
+            android:enabled="true"
+            android:fontFamily="@font/david_libre"
+            android:onClick="jogap_Cclicked"
+            android:text="C) Jogap"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="14dp" />
+
+        <android.widget.Button
+            android:id="@+id/jogap_D"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selected_option_border_bg"
+            android:enabled="true"
+            android:fontFamily="@font/david_libre"
+            android:onClick="jogap_Dclicked"
+            android:text="D) Jogap"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/Dowam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineee"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/cardlogo"
+        android:enabled="true"
+        android:fontFamily="@font/david_libre"
+        android:onClick="dowam_clicked"
+        android:text="@string/dowam"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

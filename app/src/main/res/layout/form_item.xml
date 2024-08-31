@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/cardColor"
+    android:padding="5dp"
+    android:layout_marginHorizontal="0dp"
+    app:cardElevation="2dp"
+    android:id="@+id/card"
+    android:outlineAmbientShadowColor="@color/black"
+    android:outlineSpotShadowColor="@color/black">
+
+    <ImageView
+        android:id="@+id/imMat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/_mat"
+        android:layout_margin="10dp"
+         android:layout_gravity="center|start"
+        android:layout_marginStart="15dp"/>
+    <TextView
+        android:id="@+id/tvMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eksponentleriň häsiýetleri"
+        android:textSize="15dp"
+        android:fontFamily="@font/mitrregular"
+        android:textColor="@color/black"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="80dp"/>
+    <TextView
+        android:id="@+id/tvMat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Algebra"
+        android:fontFamily="@font/mitr_light"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="80dp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/rightarrow" />
+
+
+
+
+</androidx.cardview.widget.CardView>

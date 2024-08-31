@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context=".sozluk">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="2dp"
+        android:padding="13dp"
+        android:id="@+id/baccc"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="@string/gozletm" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/sozluk_item"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollbarSize="10dp"
+      android:layout_below="@+id/cardViewS"/>
+
+</RelativeLayout>

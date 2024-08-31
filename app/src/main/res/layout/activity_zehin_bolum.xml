@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="#F8F8F8"
+    tools:context=".zehin_bolum">
+
+    <include
+        layout="@layout/mytoolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnimg"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:src="@drawable/_22"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/myToolbar"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/linear"
+      android:layout_below="@+id/btnimg"
+        android:layout_marginTop="50dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            android:id="@+id/cdmatem"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/matem"
+                android:textColor="@color/textColor"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mathematics"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="2dp"
+            android:id="@+id/cdInfor"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/informatika"
+                android:textColor="@color/textColor"
+
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/informatics"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="2dp"
+            android:id="@+id/cdENG"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/english"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="9dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eng"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="2dp"
+            android:id="@+id/cdFizik"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/fizika"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+
+                android:layout_gravity="center"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:src="@drawable/fizik1"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="2dp"
+            android:id="@+id/cdTaryh"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/taryh"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+
+                android:layout_gravity="center"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/file"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="2dp"
+            android:id="@+id/cdumumy"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#FFFFFFFF"
+            app:cardCornerRadius="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:textStyle="bold"
+                android:text="@string/umumy"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+
+                android:layout_gravity="center"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gok">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/umumy1"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>

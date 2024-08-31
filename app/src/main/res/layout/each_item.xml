@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/cardColor"
+    app:cardElevation="6dp"
+    android:id="@+id/cardViewk">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/kerim" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonia_regular"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="100dp"
+            android:text="Turkmenzxzxxzxzxzxxxzddddxzxzzxz"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506" />
+
+        <CheckBox
+            android:id="@+id/favoriteButton"
+            android:layout_width="29dp"
+            android:layout_height="21dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/selector_witlist_item"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:useMaterialThemeColors="false" />
+
+
+
+    <TextView
+        android:id="@+id/kitapAwtor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:text="Magtymguly"
+        android:fontFamily="@font/mitr_light"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:textColor="#42A5F5"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"/>
+</com.google.android.material.card.MaterialCardView>

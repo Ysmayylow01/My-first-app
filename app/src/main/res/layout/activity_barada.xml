@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".baradaActivity">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bacground">
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/oguz1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz1" />
+
+        <ImageView
+            android:id="@+id/oguz2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz2" />
+
+        <ImageView
+            android:id="@+id/oguz3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz3" />
+        <ImageView
+            android:id="@+id/oguz4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz4" />
+        <ImageView
+            android:id="@+id/oguz5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz5" />
+        <ImageView
+            android:id="@+id/oguz6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oguz6" />
+
+
+    </ViewFlipper>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E1EEF8"
+        app:cardCornerRadius="25dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/viewflipper">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/aclonia_regular"
+            android:shadowColor="#F9FBF9"
+            android:shadowRadius="8"
+            android:text="@string/Aboutapp"
+            android:textColor="#2D6EA3"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/david_libre"
+            android:textStyle="bold"
+            android:text="@string/aboutFull"
+            android:justificationMode="inter_word"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="#67A0CD"
+            android:textSize="15dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#E1EEF8"
+        app:cardCornerRadius="25dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/cardView2">
+
+        <ImageView
+            android:id="@+id/Barlogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/aa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/david_libre"
+            android:textStyle="bold"
+            android:text="Oguz Library"
+            android:textColor="#222121"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/versia"
+            android:textColor="#757778"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_baseline_share_24" />
+
+        <TextView
+            android:id="@+id/shareT"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:paddingStart="40dp"
+            android:text="@string/share"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/barOguz"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/oguz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/david_libre"
+            android:text="@string/oguzhan"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="110dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_baseline_open_in_browser_24" />
+
+        <TextView
+            android:id="@+id/etut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/mitrregular"
+            android:padding="10dp"
+            android:text="https://www.etut.edu.tm"
+            android:textColor="#5C08EF"
+            android:textSize="16dp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mitrregular"
+            android:shadowColor="@color/white"
+            android:shadowRadius="3"
+            android:text="@string/duzen"
+            android:textColor="#5A5959"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/materialCardView2"/>
+    </RelativeLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
